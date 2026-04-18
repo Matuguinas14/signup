@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Text Input, Date Input, Email Input, Password Input */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Radio Buttons and Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+/* Radio Button and Checkbox Container */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 15px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Error Messages */
+span[id$="Error"] {
+  display: block;
+  color: #d32f2f;
+  font-size: 0.9em;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Success Message */
+#successMessage {
+  display: block;
+  color: #4CAF50;
+  font-size: 1.1em;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #4CAF50;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="submit"]:active {
+  background-color: #3d8b40;
+}
+
+/* Link to Homepage */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #45a049;
+  text-decoration: underline;
+}
+
+/* Section Dividers */
+br {
+  line-height: 1.5;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  label {
+    font-size: 0.95em;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  button[type="submit"] {
+    font-size: 16px; /* Prevents zoom on mobile */
+  }
+}
